@@ -57,7 +57,7 @@
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>LOADING</h2>
-                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <p>人生天地之间，若白驹之过隙，忽然而已。</p>
                     <img src="/images/loading1.gif" />
                 </div>
             </div>
@@ -234,4 +234,17 @@
 
     
 </body>
+</html>
+ <canvas
+    id="fireworks"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"
+ ></canvas>
+ <script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+ <script src="/js/fireworks.min.js"></script>
+<html>
+ <canvas
+    id="background"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"
+ ></canvas>
+ <script src="/js/background.min.js"></script>
 </html>
