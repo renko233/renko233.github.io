@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>测试一下 | 東雲研究所</title>
+    <title>Tags | 東雲研究所</title>
     <meta name="author" content="Renko" />
     <meta name="description" content="studying..." />
     <meta name="keywords" content="" />
@@ -39,12 +39,6 @@
 <script src="/js/lib/preview.js"></script>
 
 
-
-
-
-
-
-<script src="https://s4.zstatic.net/ajax/libs/twikoo/1.6.31/twikoo.all.min.js"></script>
 
 
 
@@ -156,36 +150,23 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>测试一下</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            1985/10/26
+            <div id="archives">
+    
+    <div class="categories-tags">
+        
+        
+        
+        <span>
+            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="background: #00bcd4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                记录
+            </a>
         </span>
         
         
     </div>
-    
-    <div class="content" v-pre>
-        <p>##此为测试<br>
-Just a test</p>
-
-    </div>
-    
-    
-    
-    
-    
-    
-    <div id="comment">
-        <div id="twikoo-container"></div>
-    </div>
-    
     
 </div>
 
@@ -217,22 +198,6 @@ Just a test</p>
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-
-<script>
-    twikoo.init({
-        el: "#twikoo-container",
-        envId: "",
-        region: "",
-        path: location.pathname,
-        lang: "",
-    })
-</script>
-
-
     
 </body>
 </html>
