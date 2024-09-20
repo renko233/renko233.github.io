@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Tags: 记录 | 東雲研究所</title>
+    <title>半成品 | 東雲研究所</title>
     <meta name="author" content="Renko" />
     <meta name="description" content="studying..." />
     <meta name="keywords" content="" />
@@ -38,6 +38,14 @@
 
 <script src="/js/lib/preview.js"></script>
 
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
 
 
 
@@ -174,101 +182,66 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
+            <div class="article">
+    <div>
+        <h1>半成品</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/9/20
+        </span>
         
-        
-        
-        <span>
-            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+        <span class="category">
+            <a href="/categories/%E4%B8%BB%E9%A2%98/">
                 <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                记录
+                主题
             </a>
         </span>
         
         
-        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #03a9f4">
+                    记录
+                </a>
+            </span>
+            
+        </span>
         
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/9/20</div>
-            <a href="/2024/09/20/%E5%8D%8A%E6%88%90%E5%93%81/">
-                <h3>半成品</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E4%B8%BB%E9%A2%98/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        主题
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #03a9f4">
-                            记录
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <div class="content" v-pre>
+        <p>  目前算是就先把博客弄成这样了，加了<strong>看板娘</strong>，<strong>音乐部件</strong>，<strong>评论部件</strong>，<strong>聊天部件</strong>（位于主页右侧或右下侧，<del>不过只能和我个人私聊</del>）</p>
+<p>  估计到后面可能会略作改动，比如给音乐部件的播放样式改一下，看板娘也增添一些模型，现在自带的有7个模型，换装只有2个模型可换装。</p>
+<p>  不过以后也可能直接换整个主题了，搜魔改博客教程的时候大多用的都是butterfly主题，虽然本主题同样可以用，但有的东西因我<del>技术力问题</del>不知是否可用，比如防止网页刷新而中断音乐的pjax插件</p>
+<p>  所以目前就先这样了，美化博客是个<em>无底洞</em>，及时止损（bushi）</p>
+<p>  但是现在还不知道这个博客会用来记录些什么，做个人博客的大多都是学计算机的，会在自己的博客下面记录自己学习的内容，不过我没什么好记录的，现在也没做什么东西出来，目前能想到的就是先记录记录生活吧。</p>
+<hr>
+<p>  <img src="/images/postimage/2024-9-20.png" alt="2024-9-20"></p>
+<p>  mai和hakase镇楼</p>
+
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/9/18</div>
-            <a href="/2024/09/18/First/">
-                <h3>第一篇博客</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E7%94%9F%E6%B4%BB/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        生活
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #00bcd4">
-                            记录
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="waline-container"></div>
     </div>
+    
+    
     
 </div>
 
@@ -300,6 +273,29 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://waline.renko.space/",
+        commentCount: true,
+        pageview: false,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
+
+
+
     
     
     
