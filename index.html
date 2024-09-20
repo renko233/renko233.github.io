@@ -35,6 +35,11 @@
 <script src="/js/lib/highlight.js"></script>
 
 
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
 
 <script src="/js/lib/preview.js"></script>
 
@@ -70,7 +75,27 @@
     <script src="//code.tidio.co/9xgs2ktdmwcpepxvdyyn2tuli1ilrf5o.js"></script>
     
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+             // customised options
+             // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                 ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+             });
+        });
+    </script>
+    
+<meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
 <body>
     <div id="layout">
         <transition name="fade">
@@ -205,6 +230,55 @@
         
 
 <div class="post">
+    <a href="/2024/09/20/math-test/">
+        <h2 class="post-title">测试一下KaTeX的数学渲染</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E7%89%A9%E7%90%86/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                物理
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/9/20
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>简单使用一下KaTex数学公式</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%94%B5%E7%A3%81%E5%9C%BA/" style="color: #00bcd4">电磁场</a>
+        </span>
+        
+    </div>
+    <a href="/2024/09/20/math-test/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2024/09/20/%E5%8D%8A%E6%88%90%E5%93%81/">
         <h2 class="post-title">半成品</h2>
     </a>
@@ -280,7 +354,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>  闲来无事建了个博客，以致于我也不知该记录何物，总之先建了，以后有什么想记录的便在此写下吧。:yum:</p>
+            <p>闲来无事建了个博客，以致于我也不知该记录何物，总之先建了，以后有什么想记录的便在此写下吧。😋</p>
 
             
         </div>
@@ -295,7 +369,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #ff7d73">记录</a>
+            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #00a596">记录</a>
         </span>
         
     </div>
@@ -320,7 +394,8 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>##此为测试<br>   Just a test</p>
+            <p>##此为测试<br />
+Just a test</p>
 
             
         </div>
@@ -353,7 +428,8 @@
         </div>
         <div class="name">Renko</div>
         <div class="description">
-            <p>或许是在摸鱼中<br>      。。。</p>
+            <p>或许是在摸鱼中<br />
+。。。</p>
 
         </div>
         
