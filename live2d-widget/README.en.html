@@ -6,7 +6,7 @@
 <img src="https://forthebadge.com/images/badges/powered-by-electricity.svg" alt=""><br>
 <img src="https://forthebadge.com/images/badges/makes-people-smile.svg" alt=""></p>
 <p><a href="README.md">中文</a></p>
-<h2 id="Features">Features</h2>
+<h2 id="features">Features</h2>
 <p>Add Live2D widget to web page. Compatible with PJAX.</p>
 <p><img src="assets/screenshot-2.png" width="280"><img src="assets/screenshot-3.png" width="280"><img src="assets/screenshot-1.png" width="270"></p>
 <p>(Note: The character models above are for demonstration purposes only and are not included in this repository.)</p>
@@ -16,7 +16,7 @@
 <li><a href="https://stevenjoezhang.github.io/live2d-widget/demo/demo.html">demo.html</a> to demonstrate basic functionality</li>
 <li><a href="https://stevenjoezhang.github.io/live2d-widget/demo/login.html">login.html</a> to imitate the login interface of NPM</li>
 </ul>
-<h2 id="Usage">Usage</h2>
+<h2 id="usage">Usage</h2>
 <p>If you are a beginner or only need the basic functionality, you can simply add the following line of code to the <code>head</code> or <code>body</code> of your HTML page to load the widget:</p>
 <pre><code class="language-xml">&lt;script src=&quot;https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
@@ -24,7 +24,7 @@
 If your website uses PJAX, since the widget does not need to be refreshed on every page, make sure to place the script outside the PJAX refresh area.</p>
 <p><strong>However, we strongly recommend configuring the widget yourself to make it more suitable for your website!</strong><br>
 If you are interested in customizing the widget, please refer to the detailed instructions below.</p>
-<h2 id="Configuration">Configuration</h2>
+<h2 id="configuration">Configuration</h2>
 <p>You can refer to the source code of <code>autoload.js</code> to see the available configuration options. <code>autoload.js</code> will automatically load three files: <code>waifu.css</code>, <code>live2d.min.js</code>, and <code>waifu-tips.js</code>. <code>waifu-tips.js</code> creates the <code>initWidget</code> function, which is the main function for loading the widget. The <code>initWidget</code> function accepts an object-type parameter as the configuration for the widget. The following are the available options:</p>
 <table>
 <thead>
@@ -63,7 +63,7 @@ If you are interested in customizing the widget, please refer to the detailed in
 </tbody>
 </table>
 <p>Among them, the parameters <code>apiPath</code> and <code>cdnPath</code> only need to set one of them. <code>apiPath</code> is the URL of the backend API, which can be set up and modified by yourself (there are many things to modify, not discussed here). You can refer to <a href="https://github.com/fghrsh/live2d_api">live2d_api</a> for more information. On the other hand, <code>cdnPath</code> is used to load resources through CDN services like jsDelivr, which provides better stability.</p>
-<h2 id="Customization">Customization</h2>
+<h2 id="customization">Customization</h2>
 <p>If the options provided in the “Configuration” section above are not enough to meet your needs, you can make modifications yourself. The directory structure of this repository is as follows:</p>
 <ul>
 <li><code>src/waifu-tips.js</code> contains the logic for the button and dialog box.</li>
@@ -79,9 +79,9 @@ npm install
 npm run build
 </code></pre>
 <p>If you have any questions, feel free to raise an issue. If you have any modification suggestions, welcome to submit a pull request.</p>
-<h2 id="Deploy">Deploy</h2>
+<h2 id="deploy">Deploy</h2>
 <p>After making modifications locally, you can deploy the modified project on a server or load it via a CDN for use on a webpage.</p>
-<h3 id="Using-CDN">Using CDN</h3>
+<h3 id="using-cdn">Using CDN</h3>
 <p>To customize the content, you can fork this repository and push the modified content to your own repository using <code>git push</code>. In this case, the usage method becomes:</p>
 <pre><code class="language-xml">&lt;script src=&quot;https://fastly.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
@@ -90,7 +90,7 @@ npm run build
 <li><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Git Basics - Tagging</a></li>
 <li><a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">Managing releases in a repository</a></li>
 </ul>
-<h3 id="Self-host">Self-host</h3>
+<h3 id="self-host">Self-host</h3>
 <p>Alternatively, you can directly host these files on your server instead of loading them via CDN.</p>
 <ul>
 <li>If you can connect to your host via <code>ssh</code>, clone the forked and modified code repository onto your server.</li>
@@ -109,7 +109,7 @@ Once done, add the following code to the interface where you want to add the liv
 <pre><code class="language-xml">&lt;script src=&quot;https://example.com/path/to/live2d-widget/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>This will load the widget.</p>
-<h2 id="Thanks">Thanks</h2>
+<h2 id="thanks">Thanks</h2>
 <a href="https://www.browserstack.com/">
   <picture>
     <source media="(prefers-color-scheme: dark)" height="80" srcset="https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780">
@@ -134,7 +134,7 @@ Once done, add the following code to the interface where you want to add the liv
 <a href="https://www.fghrsh.net/post/123.html">https://www.fghrsh.net/post/123.html</a></p>
 <p>Thanks to <a href="https://hitokoto.cn">Hitokoto</a> for providing the sentence API.</p>
 <p>When you click on the paper airplane button of the virtual assistant, a hidden surprise will appear. This feature is from <a href="http://www.websiteasteroids.com">WebsiteAsteroids</a>.</p>
-<h2 id="More">More</h2>
+<h2 id="more">More</h2>
 <p>For more information, you can refer to the following links:<br>
 <a href="https://nocilol.me/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02">https://nocilol.me/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02</a><br>
 <a href="https://github.com/xiazeyu/live2d-widget.js">https://github.com/xiazeyu/live2d-widget.js</a><br>
@@ -149,7 +149,7 @@ Once done, add the following code to the interface where you want to add the liv
 <a href="https://github.com/LikeNeko/L2dPetForMac">https://github.com/LikeNeko/L2dPetForMac</a></p>
 <p>And also Wallpaper Engine:<br>
 <a href="https://github.com/guansss/nep-live2d">https://github.com/guansss/nep-live2d</a></p>
-<h2 id="License">License</h2>
+<h2 id="license">License</h2>
 <p>Released under the GNU General Public License v3<br>
 <a href="http://www.gnu.org/licenses/gpl-3.0.html">http://www.gnu.org/licenses/gpl-3.0.html</a></p>
 <p>This repository does not contain any models. The copyrights of all Live2D models, images, and motion data used for demonstration purposes belong to their respective original authors. They are provided for research and learning purposes only and should not be used for commercial purposes.</p>
@@ -164,7 +164,7 @@ Live2D Cubism Components are provided under the Live2D Open Software License.<br
 <p>The terms and conditions do prohibit modification, but obfuscating in <code>live2d.min.js</code> would not be considered illegal modification.</p>
 </blockquote>
 <p><a href="https://community.live2d.com/discussion/140/webgl-developer-licence-and-javascript-question">https://community.live2d.com/discussion/140/webgl-developer-licence-and-javascript-question</a></p>
-<h2 id="Update-Log">Update Log</h2>
+<h2 id="update-log">Update Log</h2>
 <p>On October 31, 2018, the original API provided by fghrsh was discontinued. Please update to the new address. Refer to the following article for more information:<br>
 <a href="https://www.fghrsh.net/post/170.html">https://www.fghrsh.net/post/170.html</a></p>
 <p>Starting from January 1, 2020, this project no longer depends on jQuery.</p>
