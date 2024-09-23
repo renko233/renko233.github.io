@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Categories: 主题 | 東雲研究所</title>
+    <title>随笔其一 | 東雲研究所</title>
     <meta name="author" content="Renko" />
     <meta name="description" content="studying..." />
     <meta name="keywords" content="" />
@@ -44,6 +44,12 @@
 <script src="/js/lib/preview.js"></script>
 
 
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
 
 
 
@@ -196,60 +202,20 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/categories/%E7%94%9F%E6%B4%BB/" style="background: #ff7d73">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                生活
-            </a>
+            <div class="article">
+    <div>
+        <h1>随笔其一</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/9/23
         </span>
         
-        
-        
-        <span>
-            <a href="/categories/%E7%89%A9%E7%90%86/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                物理
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/categories/%E6%9D%90%E6%96%99/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                材料
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/categories/%E4%B8%BB%E9%A2%98/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                主题
-            </a>
-        </span>
-        
-        
-        
-        
-        
-        <span>
-            <a href="/categories/%E9%9A%8F%E7%AC%94/" style="background: #00bcd4">
+        <span class="category">
+            <a href="/categories/%E9%9A%8F%E7%AC%94/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
@@ -258,45 +224,41 @@
         </span>
         
         
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #ff7d73">
+                    记录
+                </a>
+            </span>
+            
+        </span>
+        
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/9/20</div>
-            <a href="/2024/09/20/%E5%8D%8A%E6%88%90%E5%93%81/">
-                <h3>半成品</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E4%B8%BB%E9%A2%98/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        主题
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #ff7d73">
-                            记录
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <div class="content" v-pre>
+        <p>之前说的音乐部件还有看板娘什么的已经都被我取消掉了（跑），不过主要是因为加载的太慢了，直接访问都加载不出来音乐部件与看板娘，而且暂且也不想搞国内的cdn加速，搞了就要备案，可能会试试cloudflared的cdn加速。</p>
+<p>中途还加入过樱花特效背景，不过同样是加载太慢了，直接访问也是加载不出来，而且还会拉低访问速度，所以也取消掉了，正所谓大道至简（</p>
+<p>所以目前博客还是保持在了一个比较原始的状态，不过博客嘛，重在记录。但是该记录何物目前还是处于茫然之中，除了生活之外似乎并无一物可记录。说起来这个学期在学计算材料学，虽然到现在我一节都没听()，也不知道在讲什么，不过之后要是学了MS可能会记录些关于MS的博客。</p>
+<p>说起来今天和群友聊到本来还准备考个业余无线电操作证的，不过前段时间都没怎么关注过消息，有离的比较近的考点也没有注意到，看下半年还有没有近一点的考点了，不然又要等明年了。</p>
+<p><img src="/images/postimage/2024-9-23.png" alt="2024-9-23" /></p>
+<center>事已至此，还是先打拳吧，明天特瑞就要出了，爽到</center>
     </div>
+    
+    
+    
+    
+    
+    
+    <div id="comment">
+        <div id="twikoo-container"></div>
+    </div>
+    
     
 </div>
 
@@ -328,6 +290,22 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+<script>
+    twikoo.init({
+        el: "#twikoo-container",
+        envId: "https://twikoo.renko.space/",
+        region: "",
+        path: location.pathname,
+        lang: "",
+    })
+</script>
+
+
     
     
     
