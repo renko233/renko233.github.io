@@ -45,6 +45,8 @@
 
 
 
+<script src="/js/lib/search.js"></script>
+
 
 
 <link rel="stylesheet" href="/css/main.css" />
@@ -110,27 +112,27 @@
         
         <a href="/">
             <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
+            <span>&ensp;主页</span>
         </a>
         
         <a href="/about">
             <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;About</span>
+            <span>&ensp;关于</span>
         </a>
         
         <a href="/archives">
             <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
+            <span>&ensp;时间线</span>
         </a>
         
         <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;Categories</span>
+            <span>&ensp;分类</span>
         </a>
         
         <a href="/tags">
             <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
+            <span>&ensp;标签</span>
         </a>
         
     </nav>
@@ -147,7 +149,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-house fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 100%">Home</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">主页</div>
                     </div>
                 </a>
                 
@@ -156,7 +158,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-id-card fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 100%">About</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">关于</div>
                     </div>
                 </a>
                 
@@ -165,7 +167,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-box-archive fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 100%">Archives</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">时间线</div>
                     </div>
                 </a>
                 
@@ -174,7 +176,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-bookmark fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 100%">Categories</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">分类</div>
                     </div>
                 </a>
                 
@@ -183,7 +185,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-tags fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 100%">Tags</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">标签</div>
                     </div>
                 </a>
                 
@@ -198,6 +200,8 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             
 <div id="archives">
+    
+    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
     
     <div id="timeline-wrap" ref="timeline">
         
@@ -242,7 +246,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #03a9f4">
+                            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #00a596">
                                 记录
                             </a>
                         </span>
@@ -318,7 +322,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E7%94%B5%E7%A3%81%E5%AD%A6/" style="color: #00a596">
+                            <a href="/tags/%E7%94%B5%E7%A3%81%E5%AD%A6/" style="color: #ff7d73">
                                 电磁学
                             </a>
                         </span>
@@ -356,7 +360,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E7%94%B5%E7%A3%81%E5%AD%A6/" style="color: #ffa2c4">
+                            <a href="/tags/%E7%94%B5%E7%A3%81%E5%AD%A6/" style="color: #ff7d73">
                                 电磁学
                             </a>
                         </span>
@@ -394,7 +398,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E5%80%92%E6%A0%BC/" style="color: #ff7d73">
+                            <a href="/tags/%E5%80%92%E6%A0%BC/" style="color: #03a9f4">
                                 倒格
                             </a>
                         </span>
@@ -432,7 +436,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #03a9f4">
+                            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #00bcd4">
                                 记录
                             </a>
                         </span>
@@ -470,7 +474,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #00bcd4">
+                            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #ffa2c4">
                                 记录
                             </a>
                         </span>
@@ -508,7 +512,14 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/" style="color: #ff7d73">
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9D%90%E6%96%99%E5%AD%A6/" style="color: #00a596">
+                                计算材料学
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/" style="color: #03a9f4">
                                 密度泛函理论
                             </a>
                         </span>
