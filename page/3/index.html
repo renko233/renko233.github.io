@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Categories: 材料 | 東雲研究所</title>
+    <title>東雲研究所</title>
     <meta name="author" content="Renko" />
     <meta name="description" content="studying..." />
     <meta name="keywords" content="" />
@@ -46,6 +46,8 @@
 
 
 
+
+<script src="/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -196,196 +198,153 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/categories/%E7%89%A9%E7%90%86/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                物理
-            </a>
+            <div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/images/1.jpg,/images/2.jpg,/images/3.jpg,/images/4.jpg,/images/5.jpg,/images/6.png,/images/7.jpg,/images/8.jpg,/images/9.jpg,/images/10.jpg,/images/11.jpg,/images/12.jpg,/images/13.jpg,/images/14.jpg,/images/15.jpg"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>東雲研究所</h1>
+                <h3>LAB</h3>
+                <h5>studying...</h5>
+            </div>
         </span>
+    </div>
+</div>
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    true
+>
+    <div id="home-posts">
         
+
+<div class="post">
+    <a href="/1985/10/26/TEST/">
+        <h2 class="post-title">测试一下</h2>
+    </a>
+    <div class="category-and-date">
         
-        
-        <span>
-            <a href="/categories/%E7%94%9F%E6%B4%BB/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                生活
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/categories/%E6%9D%90%E6%96%99/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                材料
-            </a>
-        </span>
-        
-        
-        
-        
-        
-        <span>
-            <a href="/categories/%E4%B8%BB%E9%A2%98/" style="background: #ff7d73">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                主题
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/categories/%E9%9A%8F%E7%AC%94/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                随笔
-            </a>
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            1985/10/26
         </span>
         
         
     </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/10/8</div>
-            <a href="/2024/10/08/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80(2)/">
-                <h3>密度泛函理论基础(2)</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E6%9D%90%E6%96%99/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        材料
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9D%90%E6%96%99%E5%AD%A6/" style="color: #ffa2c4">
-                            计算材料学
-                        </a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/" style="color: #03a9f4">
-                            密度泛函理论
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>##此为测试<br />
+Just a test</p>
+
+            
         </div>
     </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/1985/10/26/TEST/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/9/27</div>
-            <a href="/2024/09/27/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80(1)/">
-                <h3>密度泛函理论基础(1)</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E6%9D%90%E6%96%99/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        材料
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9D%90%E6%96%99%E5%AD%A6/" style="color: #03a9f4">
-                            计算材料学
-                        </a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/" style="color: #00a596">
-                            密度泛函理论
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <a class="page-num" href="/page/2/">
+        <i class="fa-solid fa-caret-left fa-fw"></i>
+    </a>
+    <a class="page-num" href="/">1</a>
+    <span class="page-omit">...</span>
+    
+    <span class="current">3</span>
+    
+    
+    
+    
+</div>
+
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/9/22</div>
-            <a href="/2024/09/22/%E5%80%92%E6%A0%BC%E7%9F%A2%E9%87%8F/">
-                <h3>倒格矢与衍射</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E6%9D%90%E6%96%99/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        材料
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E5%80%92%E6%A0%BC/" style="color: #00a596">
-                            倒格
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/images/head.jpg" alt="avatar" />
         </div>
+        <div class="name">Renko</div>
+        <div class="description">
+            <p>或许是在摸鱼中<br />
+。。。</p>
+
+        </div>
+        
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561199324197335/">
+                    <i
+                        class="fa-brands fa-steam fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/55419856">
+                    <i
+                        class="fa-brands fa-bilibili fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://discordapp.com/users/1075960046934032395">
+                    <i
+                        class="fa-brands fa-discord fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1640539862">
+                    <i
+                        class="fa-solid fa-music fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+        </div>
+        
+        
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://laysky.com/navigation.html">Navigation</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://zh.z-lib.gs/profile/22533502/bd094f">Z-Library</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://archive.org/">Internet Archive</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
     </div>
     
 </div>
