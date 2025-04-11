@@ -4,7 +4,7 @@
 <head>
     <meta name="google-site-verification" content="OMIIG4wHoIYN1nS7lhQnxyGEcdztxnyBUlHQRsZHf6g" />
     <meta charset="utf-8" />
-    <title>Tags | 東雲研究所</title>
+    <title>東雲研究所</title>
     <meta name="author" content="Renko" />
     <meta name="description" content="studying..." />
     <meta name="keywords" content="" />
@@ -47,6 +47,8 @@
 
 
 
+
+<script src="/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -197,132 +199,157 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
+            <div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/images/1.jpg,/images/2.jpg,/images/3.jpg,/images/4.jpg,/images/5.jpg,/images/6.jpg,/images/7.jpg,/images/8.jpg,/images/9.jpg"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>東雲研究所</h1>
+                <h3>LAB</h3>
+                <h5>studying...</h5>
+            </div>
+        </span>
+    </div>
+</div>
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    true
+>
+    <div id="home-posts">
+        
+
+<div class="post">
+    <a href="/1985/10/26/TEST/">
+        <h2 class="post-title">测试一下</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            1985/10/26
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>##此为测试<br>
+Just a test</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/1985/10/26/TEST/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
     
-    <div class="categories-tags">
+    <a class="page-num" href="/page/3/">
+        <i class="fa-solid fa-caret-left fa-fw"></i>
+    </a>
+    <a class="page-num" href="/">1</a>
+    <span class="page-omit">...</span>
+    
+    <span class="current">4</span>
+    
+    
+    
+    
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/images/head.jpg" alt="avatar" />
+        </div>
+        <div class="name">Renko</div>
+        <div class="description">
+            <p>或许是在摸鱼中<br>
+。。。</p>
+
+        </div>
+        
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561199324197335/">
+                    <i
+                        class="fa-brands fa-steam fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/55419856">
+                    <i
+                        class="fa-brands fa-bilibili fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://discordapp.com/users/1075960046934032395">
+                    <i
+                        class="fa-brands fa-discord fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1640539862">
+                    <i
+                        class="fa-solid fa-music fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+        </div>
         
         
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://www.sci-hub.st/">Sci-Hub</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://z-lib.blog/profile/22533502/bd094f">Z-Library</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://simpletex.cn/ai/latex_ocr">SimpleTex</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://archive.org/">Internet Archive</a>
+            </div>
+            
+        </div>
         
-        <span>
-            <a href="/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                量子力学
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E8%AE%B0%E5%BD%95/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                记录
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E7%A7%AF%E5%88%86/" style="background: #03a9f4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                积分
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                复变函数
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E7%94%B5%E7%A3%81%E5%AD%A6/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                电磁学
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E7%9F%A2%E9%87%8F%E5%88%86%E6%9E%90/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                矢量分析
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%8A%9B%E5%AD%A6/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                力学
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%85%89%E5%AD%A6/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                光学
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%80%92%E6%A0%BC/" style="background: #ff7d73">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                倒格
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9D%90%E6%96%99%E5%AD%A6/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                计算材料学
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/" style="background: #ff7d73">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                密度泛函理论
-            </a>
-        </span>
-        
-        
+    </div>
+</div>
+
     </div>
     
 </div>
