@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://demo.renko.space/2025/04/13/1/</loc>
-    
-    <lastmod>2025-04-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://demo.renko.space/2025/04/04/formula(2)/</loc>
     
     <lastmod>2025-04-12</lastmod>
@@ -218,7 +209,7 @@
 
   
   <url>
-    <loc>https://demo.renko.space/tags/58/</loc>
+    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -246,13 +237,6 @@
   </url>
   
   <url>
-    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2025-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://demo.renko.space/tags/%E7%94%B5%E7%A3%81%E5%AD%A6/</loc>
     <lastmod>2025-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -267,6 +251,13 @@
   </url>
   
   <url>
+    <loc>https://demo.renko.space/tags/%E5%80%92%E6%A0%BC/</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://demo.renko.space/tags/%E5%8A%9B%E5%AD%A6/</loc>
     <lastmod>2025-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -275,13 +266,6 @@
   
   <url>
     <loc>https://demo.renko.space/tags/%E5%85%89%E5%AD%A6/</loc>
-    <lastmod>2025-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.renko.space/tags/%E5%80%92%E6%A0%BC/</loc>
     <lastmod>2025-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -304,6 +288,13 @@
 
   
   <url>
+    <loc>https://demo.renko.space/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://demo.renko.space/categories/%E7%89%A9%E7%90%86/</loc>
     <lastmod>2025-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -312,13 +303,6 @@
   
   <url>
     <loc>https://demo.renko.space/categories/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2025-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.renko.space/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
