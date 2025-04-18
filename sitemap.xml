@@ -225,21 +225,7 @@
   </url>
   
   <url>
-    <loc>https://demo.renko.space/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/</loc>
-    <lastmod>2025-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.renko.space/tags/%E7%83%AD%E5%8A%9B%E5%AD%A6/</loc>
-    <lastmod>2025-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.renko.space/tags/%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/</loc>
+    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -260,7 +246,21 @@
   </url>
   
   <url>
-    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://demo.renko.space/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.renko.space/tags/%E7%83%AD%E5%8A%9B%E5%AD%A6/</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.renko.space/tags/%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -325,14 +325,14 @@
   </url>
   
   <url>
-    <loc>https://demo.renko.space/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://demo.renko.space/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://demo.renko.space/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://demo.renko.space/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
