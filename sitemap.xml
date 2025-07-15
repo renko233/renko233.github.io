@@ -252,13 +252,6 @@
   </url>
   
   <url>
-    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2025-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://demo.renko.space/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/</loc>
     <lastmod>2025-07-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -274,6 +267,13 @@
   
   <url>
     <loc>https://demo.renko.space/tags/%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/</loc>
+    <lastmod>2025-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -315,20 +315,6 @@
   </url>
   
   <url>
-    <loc>https://demo.renko.space/tags/%E8%AE%A1%E7%AE%97%E6%9D%90%E6%96%99%E5%AD%A6/</loc>
-    <lastmod>2025-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.renko.space/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/</loc>
-    <lastmod>2025-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://demo.renko.space/tags/%E5%8A%9B%E5%AD%A6/</loc>
     <lastmod>2025-07-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -337,6 +323,20 @@
   
   <url>
     <loc>https://demo.renko.space/tags/%E5%85%89%E5%AD%A6/</loc>
+    <lastmod>2025-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.renko.space/tags/%E8%AE%A1%E7%AE%97%E6%9D%90%E6%96%99%E5%AD%A6/</loc>
+    <lastmod>2025-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.renko.space/tags/%E5%AF%86%E5%BA%A6%E6%B3%9B%E5%87%BD%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2025-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
