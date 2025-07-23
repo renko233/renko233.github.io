@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="google-site-verification" content="OMIIG4wHoIYN1nS7lhQnxyGEcdztxnyBUlHQRsZHf6g" />
+    <meta charset="utf-8" />
+    <title>微扰论 | 東雲研究所</title>
+    <meta name="author" content="Renko" />
+    <meta name="description" content="studying..." />
+    <meta name="keywords" content="" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/head.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+
+    <!-- 在线通讯Tidio -->
+    
+    <script src="//code.tidio.co/9xgs2ktdmwcpepxvdyyn2tuli1ilrf5o.js"></script>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+             // customised options
+             // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                 ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+             });
+        });
+    </script>
+
+    <link rel="stylesheet" href="/css/custom.css" />
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    
+    <script src="/js/title.js"></script>
+
+   
+    
+
+    
+<meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>人生天地之间，若白驹之过隙，忽然而已。</p>
+                    <img src="/images/loading6.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>東雲研究所</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;主页</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;时间线</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;分类</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;标签</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;東雲研究所</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">主页</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">关于</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">时间线</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">分类</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 100%">标签</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>微扰论</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/7/23
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E7%89%A9%E7%90%86/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                物理
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" style="color: #ffa2c4">
+                    量子力学
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E8%BF%91%E4%BC%BC%E6%96%B9%E6%B3%95/" style="color: #00a596">
+                    近似方法
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1>定态微扰论</h1>
+<h2 id="非简并态微扰">非简并态微扰</h2>
+<p> 定态微扰论 (Stationary Perturbation Theory) 的前提为扰动是与时间无关的, 并且是微小的. 利用该理论可以通过在已知无微扰下的精确解来获得存在微扰时的体系近似解. 存在微扰时的系统哈密顿量可以分解为两项</p>
+<p>$$H=H_0 + \lambda H^{'}$$</p>
+<p>其中 $H^{'}$ 为微扰项, 并且使用一个很小的实参数 $\lambda$ 来反映其微小程度. 然后将 $\psi _n$ 与 $E_n$ 展开为 $\lambda$ 的幂级数:</p>
+<p>$$\psi _n=\psi _n ^{(0)}+\lambda \psi _n ^{(1)} +\lambda ^2 \psi _n ^{(2)} + …$$</p>
+<p>$$E_n = E_n^{(0)}+\lambda E_n^{(1)}+\lambda ^2 E_n^{(2)} + …$$</p>
+<p>其中 $E_n^{(0)}$ , $\psi _n ^{(0)}$ 为无微扰下 $H_0$ 的第 $n$ 个本征值的精确解, $E_n^{(1)}$ , $\psi _n ^{(1)}$ 为第 $n$ 个本征值的一阶修正 (first-order correction) , $E_n^{(2)}$ , $\psi _n ^{(2)}$ 为二阶修正 (second-order correction) , 之后的依此类推. 将上述二式代入定态薛定谔方程可得</p>
+<p>$$(H_0 + \lambda H^{'})(\psi _n ^{(0)}+\lambda \psi _n ^{(1)} +\lambda ^2 \psi _n ^{(2)} + …)=(E_n^{(0)}+\lambda E_n^{(1)}+\lambda ^2 E_n^{(2)})(\psi _n ^{(0)}+\lambda \psi _n ^{(1)} +\lambda ^2 \psi _n ^{(2)} + …)$$</p>
+<p>并将 $\lambda$ 的相同幂次项合并:</p>
+<p>$$H_0 \psi _n ^{(0)} + \lambda (H_0 \psi _n ^{(1)} + H^{‘}\psi _n ^{(0)}) + \lambda ^2 (H_0 \psi _n ^{(2)} + H^{’} \psi _n ^{(1)})+ … =E_n^{(0)} \psi _n ^{(0)} + \lambda (E_n^{(0)} \psi _n ^{(1)} + E_n^{(1)} \psi _n ^{(0)}) + \lambda ^2 (E_n^{(0)} \psi _n ^{(2)} + E_n^{(1)} \psi _n ^{(1)} + E_n^{(2)} \psi _n ^{(0)} )$$</p>
+<p>对于零阶 ( $\lambda ^0$ )有  $H_0 \psi _n ^{(0)} =E_n^{(0)} \psi _n ^{(0)}$ , 显然这是无微扰时的状态, 并且是可以精确求解的.</p>
+<p>对于一阶 ( $\lambda ^1$ )有</p>
+<p>$$H_0 \psi _n ^{(1)} + H^{'}\psi _n <sup>{(0)}=E_n</sup>{(0)} \psi _n ^{(1)} + E_n^{(1)} \psi _n ^{(0)}  $$</p>
+<p>对于二阶 ( $\lambda ^1$ ) 有</p>
+<p>$$H_0 \psi _n ^{(2)} + H^{'} \psi _n <sup>{(1)}=E_n</sup>{(0)} \psi _n ^{(2)} + E_n^{(1)} \psi _n ^{(1)} + E_n^{(2)} \psi _n ^{(0)} $$</p>
+<h3 id="一阶近似">一阶近似</h3>
+<p> 现在讨论一阶的情况, 为得到一阶的能量修正 , 使用 $\psi _n^{(0)}$ 对于一阶的情况进行内积运算, 可得</p>
+<p>$$\langle \psi _n^{(0)} | H_0 \psi _n ^{(1)} \rangle + \langle \psi _n^{(0)} | H^{'}\psi _n ^{(0)} \rangle = \langle \psi _n^{(0)} | E_n^{(0)} \psi _n ^{(1)} \rangle + \langle \psi _n^{(0)} | E_n^{(1)} \psi _n ^{(0)} \rangle $$</p>
+<p>即</p>
+<p>$$E_n^{(0)} \langle \psi _n^{(0)} | \psi _n ^{(1)} \rangle + \langle \psi _n^{(0)} | H^{'} | \psi _n ^{(0)} \rangle = E_n^{(0)} \langle \psi _n^{(0)} | \psi _n ^{(1)} \rangle +  E_n^{(1)} \langle \psi _n^{(0)} | \psi _n ^{(0)} \rangle$$</p>
+<p>于是左右两边第一项相消, 右式第二项由本征矢的正交归一性等于 $E_n^{(1)}$ .即:</p>
+<blockquote>
+<p>$$E_n^{(1)}=\langle \psi _n^{(0)} | H^{'} | \psi _n ^{(0)} \rangle $$</p>
+</blockquote>
+<p>上式即为能量的一阶修正, 也就是 $H^{'}$ 在 $H_0$ 表象下的矩阵元. 现在继续求波函数的一级修正, 将一阶情况改写为合并了波函数的形式:</p>
+<p>$$(H_0 - E_n^{(0)}) \psi _n ^{(1)} = - (H<sup>{'}-E_n</sup>{(1)})\psi _n ^{(0)}$$</p>
+<p>将 $ \psi _n ^{(1)} $ 使用未微扰的本征函数完备系进行展开:</p>
+<p>$$\psi _n ^{(1)}=\sum _{m \ne n} c_m \psi _m ^{(0)}$$</p>
+<p>于是现在的问题变为解决系数 $c_m$ 的问题, 现将上式带回刚刚改写的合并波函数的式子(求和中去掉 $\psi _n ^{(0)}$ 这一项的原因是如果 $\psi _n ^{(1)}$ 满足一级情况, 那么对于任意常数 $\alpha$ , $(\psi _n ^{(1)} + \alpha \psi _n ^{(0)})$ 亦满足一级情况, 因此无需对 $\psi _n ^{(0)}$ 也求和了), 可得:</p>
+<p>$$\sum _{m \ne n}(E_m<sup>{(0)}-E_n</sup>{(0)})c_m \psi _m ^{(0)}=- (H<sup>{'}-E_n</sup>{(1)})\psi _n ^{(0)}$$</p>
+<p>现取本征函数系中的一 $l \ne n$ 的波函数 $\psi _l^{(0)}$ 与上式进行内积, 得到:</p>
+<p>$$\sum _{m \ne n}(E_m<sup>{(0)}-E_n</sup>{(0)})c_m \langle \psi _l^{(0)} | \psi _m ^{(0)} \rangle =- \langle \psi _l^{(0)} |H^{'}|\psi _n ^{(0)} \rangle + E_n^{(1)}) \langle \psi _l^{(0)} |\psi _n ^{(0)} \rangle$$</p>
+<p>又由于 $l \ne n$ , 于是由正交归一性得:</p>
+<p>$$(E_l<sup>{(0)}-E_n</sup>{(0)})c_l= -\langle \psi _l^{(0)} |H^{'}|\psi _n ^{(0)} \rangle $$</p>
+<p>于是可得:</p>
+<p>$$c_m=\frac{\langle \psi _m^{(0)} |H^{'}|\psi _n ^{(0)} \rangle}{E_n<sup>{(0)}-E_m</sup>{(0)}}$$</p>
+<p>则波函数的一级修正为:</p>
+<blockquote>
+<p>$$\psi _n ^{(1)}=\sum _{m \ne n} \frac{\langle \psi _m^{(0)} |H^{'}|\psi _n ^{(0)} \rangle}{E_n<sup>{(0)}-E_m</sup>{(0)}} \psi _m ^{(0)}$$</p>
+</blockquote>
+<h3 id="二阶近似">二阶近似</h3>
+<p> 现在把二阶情况再写一遍:</p>
+<p>$$H_0 \psi _n ^{(2)} + H^{'} \psi _n <sup>{(1)}=E_n</sup>{(0)} \psi _n ^{(2)} + E_n^{(1)} \psi _n ^{(1)} + E_n^{(2)} \psi _n ^{(0)} $$</p>
+<p>对于二阶情况的能量修正, 同对一阶情况的处理一样, 将 $\psi _n^{(0)}$ 与上式进行内积, 得到</p>
+<p>$$\langle \psi _n^{(0)} |H_0 \psi _n ^{(2)} \rangle +\langle \psi _n^{(0)} | H^{'} \psi _n ^{(1)} \rangle =E_n^{(0)} \langle \psi _n^{(0)} |\psi _n ^{(2)} \rangle + E_n^{(1)} \langle \psi _n^{(0)} |\psi _n ^{(1)} \rangle + E_n^{(2)} \langle \psi _n^{(0)} | \psi _n ^{(0)} \rangle $$</p>
+<p>同理左式第一项与右式第一项消掉, 再由正交归一性得:</p>
+<p>$$ E_n^{(2)} = \langle \psi _n^{(0)} | H^{'} \psi _n ^{(1)} \rangle -E_n^{(1)} \langle \psi _n^{(0)} |\psi _n ^{(1)} \rangle $$</p>
+<p>又由于 $\psi _n ^{(1)}=\sum _{m \ne n} c_m \psi _m ^{(0)}$ ,则有:</p>
+<p>$$\langle \psi _n^{(0)} |\psi _n ^{(1)} \rangle=\sum _{m \ne n} c_m \langle \psi _n^{(0)} |\psi _m ^{(0)} \rangle =0$$</p>
+<p>即:</p>
+<p>$$E_n^{(2)} = \langle \psi _n^{(0)} | H^{‘} \psi _n ^{(1)} \rangle=\sum _{m \ne n} c_m \langle \psi _n^{(0)} | H^{’} |\psi _m ^{(0)} \rangle = \sum _{m \ne n} \frac{| \langle \psi _m^{(0)} |H^{'}|\psi _n ^{(0)} \rangle |<sup>2}{E_n</sup>{(0)}-E_m^{(0)}}$$</p>
+<p>即能量的二阶修正为:</p>
+<blockquote>
+<p>$$E_n^{(2)} = \sum _{m \ne n} \frac{| \langle \psi _m^{(0)} |H^{'}|\psi _n ^{(0)} \rangle |<sup>2}{E_n</sup>{(0)}-E_m^{(0)}}$$</p>
+</blockquote>
+<p>即二级修正依赖于 $H_0$ 的除 $\psi _n^{(0)}$ 以外全部波函数, 可采用下图进行理解</p>
+<p><img src="/images/postimage/PerturbationTheory/1.png" alt=""></p>
+<center> 
+<p><a target="_blank" rel="noopener" href="https://faculty.pku.edu.cn/_resources/group1/M00/00/0D/cxv0BF5mCiKALw3wAMOSFUeyZKI833.pdf">微扰论2</a> </center></p>
+<br>
+<p> 同理可以利用微扰论继续计算波函数的二阶修正, 能量的三阶修正…等, 这里就不做推导了. Griffiths 书上有写 Landau 的那本量子力学有讲更高阶的修正与推导高阶修正公式的一般方法, 不过我没看过那本, 这里就不写了, 也许以后会写, 这里仅给出能量的三阶修正表达式:</p>
+<blockquote>
+<p>$$E_n^{(3)}=\sum <em>{m,m^{'} \ne n}\frac{H</em>{nm}<sup>{'}H_{mm</sup>{‘}}<sup>{'}H_{m</sup>{’}n}<sup>{'}}{(E_n</sup>{(0)}-E_m<sup>{(0)})(E_n</sup>{(0)}-E_{m<sup>{'}}</sup>{(0)})}- \sum <em>{m \ne n}\frac{H</em>{nn}<sup>{'}|H_{mn}</sup>{'}|<sup>2}{(E_n</sup>{(0)}-E_m<sup>{(0)})</sup>2}$$</p>
+</blockquote>
+<br>
+<h2 id="简并态微扰">简并态微扰</h2>
+<p> 如果未微扰时的本征矢存在简并, 那么显然非简并态下的微扰论将不再使用(一个显然的例子是对于能量二级修正将使得分母为0,使得结果发散). 接下来讨论简并态微扰 (Degenerate Perturbation Theory) 的情况.</p>
+<p> 以二重简并为例(更多重简并也同理, 仅仅是矩阵阶数的差异而已), 假设 $\psi _a^{(0)}$ 与 $\psi _n^{(0)}$ 是简并的, 即</p>
+<p>$$H_0 \psi _a^{(0)} =E^{(0)} \psi _a^{(0)} \qquad H_0 \psi _b^{(0)} =E^{(0)} \psi _b^{(0)} \qquad \langle \psi _a^{(0)} | \psi _b^{(0)} \rangle =0$$</p>
+<p>那么 $\psi _a^{(0)}$ 与 $\psi _n^{(0)}$ 的线性组合显然也是 $H_0$ 的本征态, 并且本征值也为 $E$ :</p>
+<p>$$\psi ^{(0)}=\alpha \psi _a^{(0)}+\beta \psi _b^{(0)} \qquad H_0 \psi ^{(0)} =E^{(0)} \psi ^{(0)} $$</p>
+<p>通常微扰 $H^{'}$ 会消除这一简并, 使得 $\psi _a^{(0)}$ 与 $\psi _n^{(0)}$ 退简并, 将原来无微扰的能级 $E^{(0)}$ 分裂成两个能级. 于是现在的问题变成了如何求解 “好” 的 $\psi _a^{(0)}$ 与 $\psi _n^{(0)}$ 的线性组合.</p>
+<p><img src="/images/postimage/PerturbationTheory/2.png" alt=""></p>
+<center>微扰后的退简并(图来源Introduction to Quantum Mechanics,3rd Edition--Griffiths | Figure 7.4)</center>
+<br>
+<p> 现在做和与先前非简并态微扰相同的操作:</p>
+<p>$$E=E^{(0)}+ \lambda E^{(1)} + \lambda ^2 E^{(2)} + … \qquad \psi =\psi ^{(0)} + \lambda \psi ^{(1)} + \lambda ^2 \psi ^{(2)} + …$$</p>
+<p>同样代入定态薛定谔方程并合并 $\lambda$ 幂次相同的项:</p>
+<p>$$H_0 \psi ^{(0)} + \lambda (H^{'} \psi ^{(0)} +H_0 \psi ^{(1)} )+…=E^{(0)} \psi ^{(0)} + \lambda (E^{(0)} \psi ^{(1)}+ E^{(1)} \psi ^{(0)} )$$</p>
+<h3 id="一阶近似-v2">一阶近似</h3>
+<p> 同样对于一阶情况 ( $\lambda ^1$ ) , 有</p>
+<p>$$H_0 \psi ^{(1)} + H^{'} \psi ^{(0)} = E^{(0)} \psi ^{(1)} + E^{(1)} \psi ^{(0)} $$</p>
+<p>使用 $\psi _a^{(0)}$ 与上式内积, 得:</p>
+<p>$$\langle \psi _a^{(0)} | H_0 \psi ^{(1)} \rangle + \langle \psi _a^{(0)} | H^{'} \psi ^{(0)} \rangle = E^{(0)} \langle \psi _a^{(0)} | \psi ^{(1)} \rangle + E^{(1)} \langle \psi _a^{(0)} | \psi ^{(0)} \rangle$$</p>
+<p>同样左一与右一相消, 再将 $\psi ^{(0)}=\alpha \psi _a^{(0)}+\beta \psi _b^{(0)}$ 代入上式并由正交归一可得:</p>
+<p>$$\alpha  \langle \psi _a^{(0)} | H^{‘} \psi _a^{(0)} \rangle + \beta \langle \psi _a^{(0)} | H^{’} \psi _b^{(0)} \rangle = \alpha E^{(1)}$$</p>
+<p>可紧凑的写为:</p>
+<p>$$\alpha H_{aa}^{‘} + \beta H_{ab}^{’}=\alpha E^{(1)}$$</p>
+<p>刚刚是使用 $\psi _a^{(0)}$ 进行内积得到的结果, 现在再使用 $\psi _b^{(0)}$ 与一阶情况进行内积, 同理得</p>
+<p>$$\alpha H_{ba}^{‘} + \beta H_{bb}^{’}=\beta E^{(1)}$$</p>
+<p>显然这是一个矩阵的形式, 而其元素正是 $H^{'}$ 对于无微扰的波函数 $\psi _a^{(0)}$ 和 $\psi _b^{(0)}$ 的矩阵元.即</p>
+<p>$$\begin{pmatrix}H_{aa}^{‘}   &amp; H_{ab}^{’} \ H_{ba}^{‘}   &amp; H_{bb}^{’} \end{pmatrix} \begin{pmatrix}\alpha   \ \beta \end{pmatrix} =E^{(1)}\begin{pmatrix}\alpha  \ \beta \end{pmatrix}$$</p>
+<p>那么显然解其久期方程 (secular equation) 便可得到能量的一阶修正 $E^{(1)}$ 与系数 $\alpha$ , $\beta$ 的值, 由解出的系数便可得到由无微扰时的本征矢线性组合出来的 “好” 的一阶态矢.</p>
+<blockquote>
+<p> 因此区别于非简并的一阶修正, 简并态的一阶修正是解微扰 $H^{‘}$ 在简并子空间中的矩阵的久期方程, 即计算 $H^{’}$ 在简并的本征矢的表象下的矩阵元, 再计算其久期方程, 便可得到能量的一阶修正与 “好” 的近似出来的零级波函数.</p>
+</blockquote>
+<h3 id="二阶近似-v2">二阶近似</h3>
+<p> 同理继续可以推出简并态的二阶修正, 这里就不做推导了, 仅给出二级修正的矩阵元(简并态为简并于 $E_n$ 的 $n_1 , n_2 , n_3 , … n_i , … ,n_j …$ ):</p>
+<blockquote>
+<p>$$G_{ij}=\sum_{m \ne n(all)}\frac{\langle n_i|H^{‘}| m \rangle \langle m |H^{’}| n_j \rangle}{E_n<sup>{(0)}-E_m</sup>{(0)}}$$</p>
+</blockquote>
+<p>同理解由上述矩阵元组成的矩阵便可得到简并态的能量二阶修正, 这里不作赘述了.</p>
+<br>
+<br>
+<h1>含时微扰论</h1>
+<h2 id="二能级系统">二能级系统</h2>
+<p> 假设无微扰时系统只有 $\psi _a$ 与 $\psi _b$ 两个态, 且为无微扰哈密顿量 $H_0$ 的本征态:</p>
+<p>$$H_0 \psi _a =E_a \psi _a \qquad H_0 \psi _b =E_b \psi _b \qquad \langle \psi _a | \psi _b \rangle =\delta _{ab} $$</p>
+<p>由于其完备性, 任何状态都能表示为它们的线性组合, 并且系统的初态也可以表示为:</p>
+<p>$$\Psi (0)=c_a \psi _a + c_b \psi _b $$</p>
+<p>将时间演化算符 $U=e^{-iHt/ \hbar}$ 作用于初态则可以得到波函数随时间演化的情况</p>
+<p>$$\Psi (t)=c_a \psi _a e^{-iE_a t/ \hbar} + c_b \psi _b e^{-iE_b t/ \hbar} $$</p>
+<p> 现假设引入一个含时微扰 $H^{'}(t)$ . 同理由于 $\psi _a$ 与 $\psi _b$ 的完备性, $\Psi (t)$ 仍可以表示为它们的线性组合, 唯一的区别是此时的系数 $c_a$ 与 $c_b$ 是时间 $t$ 的函数:</p>
+<p>$$\Psi (t)=c_a(t) \psi _a e^{-iE_a t/ \hbar} + c_b(t) \psi _b e^{-iE_b t/ \hbar} $$</p>
+<p>于是可以通过将上式代入含时薛定谔方程来求解 $c_a(t)$ 与 $c_b(t)$ , 即代入:</p>
+<p>$$H \Psi (t)=i \hbar \frac{\partial }{\partial t} \Psi (t) \qquad H=H_0+H^{'}(0) $$</p>
+<p>于是可得</p>
+<p>$$\begin{matrix}c_a(H_0 \psi _a )e^{-iE_a t/ \hbar}+c_b(H_0 \psi _b )e^{-iE_b t/ \hbar} +c_a(H^{‘} \psi _a )e^{-iE_a t/ \hbar}+c_b(H^{’} \psi _b )e^{-iE_b t/ \hbar} \ =i\hbar[\dot{c_a}\psi _a e^{-iE_a t/ \hbar} +\dot{c_b}\psi _b e^{-iE_b t/ \hbar} +c_a \psi _a (-\frac{iE_a}{\hbar})e^{-iE_a t/ \hbar}+c_b \psi _b (-\frac{iE_b}{\hbar})e^{-iE_b t/ \hbar}] \end{matrix}$$</p>
+<p>由定态薛定谔方程可将上式中的左式前两项与右式最后两项消掉, 即</p>
+<p>$$c_a(H^{‘} \psi _a )e^{-iE_a t/ \hbar}+c_b(H^{’} \psi _b )e^{-iE_b t/ \hbar}=i\hbar(\dot{c_a}\psi _a e^{-iE_a t/ \hbar} +\dot{c_b}\psi _b e^{-iE_b t/ \hbar})$$</p>
+<p>为分离出 $\dot{c_a}$ ,使用 $\psi _a$ 与上式进行内积, 并由正交归一性得:</p>
+<p>$$c_a \langle \psi _a |H^{‘}|\psi_a \rangle e^{-iE_a t/ \hbar} + c_b \langle \psi _a |H^{’}|\psi_b \rangle e^{-iE_b t/ \hbar}=i\hbar \dot{c_a}e^{-iE_a t/ \hbar}$$</p>
+<p>对其中的矩阵元进行缩写, 并两边同乘 $-(i/ \hbar)e^{iE_at/ \hbar}$ 则可得</p>
+<p>$$\dot{c_a}=-\frac{i}{\hbar}[c_a H_{aa}^{'}+c_b H_{ab}<sup>{'}e</sup>{-i(E_b-E_a)t/ \hbar}]$$</p>
+<p>同理使用 $\psi _b$ 进行内积则可分离出 $\dot{c_b}$ , 即:</p>
+<p>$$\dot{c_b}=-\frac{i}{\hbar}[c_a H_{bb}^{'}+c_b H_{ba}<sup>{'}e</sup>{i(E_b-E_a)t/ \hbar}]$$</p>
+<p>通常情况下 $H^{'}$ 的对角矩阵元为 $0$ , 证明过程见 Introduction to Quantum Mechanics,3rd Edition–Griffiths | Problem 11.5 . 要是本人不懒的话后面可能会在这里补起来证明过程. 因此方程可简化为:</p>
+<blockquote>
+<p>$$\dot{c_a}=-\frac{i}{\hbar}H_{ab}<sup>{'}e</sup>{-i\omega <em>0 t}c_b \qquad \dot{c_b}=-\frac{i}{\hbar}H</em>{ba}<sup>{'}e</sup>{i\omega _0 t}c_a$$</p>
+</blockquote>
+<p>其中(假定 $E_b \geqslant E_a$ , 即 $\omega _0 \geqslant 0$ )</p>
+<blockquote>
+<p>$$\omega _0=\frac{E_b - E_a}{\hbar}$$</p>
+</blockquote>
+<p> 到目前为止的处理皆是严格, 对微扰大小未作任何假定. 而当 $H^{'}(t)$ 很小时, 则可以利用逐次近似法来求解 $\dot{c_a}$ 与 $\dot{c_b}$ 的方程. 设开始时粒子处于能量较低的状态, 即初态处于 $E_a$ 的概率为 $100%$ , 即:</p>
+<p>$$c_a(0)=1 \qquad c_b(0)=0$$</p>
+<h3 id="零阶近似">零阶近似</h3>
+<p> 即无微扰, 此时系统将继续保持这种状态</p>
+<p>$$c_a(t)=1 \qquad c_b(t)=0$$</p>
+<h3 id="一阶近似-v3">一阶近似</h3>
+<p> 将零阶近似值代入上面求解 $\dot{c_a}$ 与 $\dot{c_b}$ 的方程, 可得</p>
+<p>$$\frac{dc_a^{(1)}}{dt}=0$$</p>
+<p>$$\frac{dc_b<sup>{(1)}}{dt}=-\frac{i}{\hbar}H_{ba}</sup>{'}e^{i\omega _0 t}$$</p>
+<p>即:</p>
+<p>$$c_a^{(1)}(t)=1$$</p>
+<blockquote>
+<p>$$c_b^{(1)}(t)=-\frac{i}{\hbar}\int <em>0^t H</em>{ba}<sup>{'}(t</sup>{‘})e^{i\omega _0 t<sup>{'}}dt</sup>{’}$$</p>
+</blockquote>
+<h3 id="二阶近似-v3">二阶近似</h3>
+<p> 同理将一阶近似值代入求解 $\dot{c_a}$ 与 $\dot{c_b}$ 的方程, 可得</p>
+<p>$$\frac{dc_a<sup>{(2)}}{dt}=-\frac{i}{\hbar}H_{ab}</sup>{‘}e^{-i \omega _0 t}(-\frac{i}{\hbar})\int <em>0^t H</em>{ba}<sup>{'}(t</sup>{’})e^{i\omega _0 t<sup>{'}}dt</sup>{'}$$</p>
+<p>即</p>
+<p>$$c_a^{(2)}(t)=1-\frac{1}{\hbar ^2}\int <em>0^t H</em>{ab}<sup>{'}(t</sup>{‘})e^{-i\omega _0 t^{’}}[\int <em>0<sup>{t</sup>{'}}H</em>{ba}<sup>{'}(t</sup>{‘’})e^{i \omega _0 t<sup>{‘’}}dt</sup>{‘}]dt^{’}$$</p>
+<h3 id="其它">其它</h3>
+<p> 原则上可以无限重复这套做法, 将 $n$ 阶近似代入到方程中, 求解 $n+1$ 阶的近似. 此外, 可将一阶近似的式子写成如下形式:</p>
+<p>$$c_b<sup>{(1)}(t)e</sup>{-iE_b t/ \hbar}=-\frac{i}{\hbar}\int <em>0^t e^{-iE_b (t-t^{'})/ \hbar}H</em>{ba}<sup>{'}(t</sup>{‘})e^{-iE_a t^{’}/ \hbar}dt^{'}$$</p>
+<p>即还原了之前分离出的指数 $e^{-iE_b t/ \hbar}$ , 且此过程可用如下示意图解释, 即随着时间的演化, 从 $0$ 到 $t^{‘}$ 系统处于 $\psi _a$ 态上, 其摆动来源于因子 $e^{-iE_a t^{’} / \hbar}$ ,并在 $t^{‘}$ 时刻从 $\psi _a$ 态跃迁到 $\psi _b$ 态, 然后直到时间 $t$ 都保持在 $\psi _b$ 态上, 其摆动来源于因子 $e<sup>{-iE_b(t-t</sup>{’})/ \hbar}$ .当然此图仅作示例, 实际上这些状态并没有急剧的跃迁, 跃迁是发生在所有时间 $t^{'}$ 上</p>
+<p><img src="/images/postimage/PerturbationTheory/3.png" alt=""></p>
+<center>一阶近似下系统随时间演化的状态(图来源Introduction to Quantum Mechanics,3rd Edition--Griffiths | Figure 11.1)</center>
+<br>
+<p> 在高阶和多能级系统中, 表达式将变得更为复杂, 以二阶近似为例, 式子可以同理写为如下形式:</p>
+<p>$$\begin{matrix}c_a<sup>{(2)}(t)e</sup>{-iE_a t/ \hbar}=e^{-iE_a t/ \hbar}+(-\frac{i}{\hbar})^2 \int <em>0^t \int <em>0<sup>{t</sup>{‘}} e^{-iE_a (t-t^{’})/ \hbar} \times   \ H</em>{ab}<sup>{'}(t</sup>{‘})e^{-iE_b (t<sup>{'}-t</sup>{’'})/ \hbar}H</em>{ba}<sup>{'}(t</sup>{‘’})e^{-iE_a t^{‘’}/ \hbar}dt<sup>{‘’}dt</sup>{'} \end{matrix}$$</p>
+<p>式中第一项是描述系统一直处于 $\psi _a$ 态上的第一个过程, 第二项是描述系统在时间 $t^{‘’}$ 从 $\psi _a$ 态跃迁到 $\psi _b$ 态, 然后在时间 $t^{'}$ 回到 $\psi _a$ 态的第二个过程, 即如图:</p>
+<p><img src="4.png" alt=""></p>
+<center>二阶近似下系统随时间演化的状态(图来源Introduction to Quantum Mechanics,3rd Edition--Griffiths | Figure 11.2)</center>
+<br>
+<p> 于是还可以写出多能级系统的一般性结果:</p>
+<p>$$\begin{matrix}c_n<sup>{(2)}e</sup>{-iE_n t/ \hbar}=\delta _{ni}e^{-iE_i t/ \hbar}+(-\frac{i}{\hbar})\int <em>0^t e^{-iE_n (t-t^{'})/ \hbar}H</em>{ni}<sup>{'}(t</sup>{‘})e^{-iE_i t^{’}/ \hbar}dt^{‘}+   \ \sum _m (-\frac{i}{\hbar})^2 \int <em>0^t \int <em>0<sup>{t</sup>{‘}}e^{-iE_n (t-t^{’})/ \hbar}H</em>{nm}<sup>{'}(t</sup>{‘})e^{-iE_m (t<sup>{'}-t</sup>{’'})/ \hbar}H</em>{mi}<sup>{'}(t</sup>{’‘})e^{-iE_i t^{’‘}/ \hbar}dt<sup>{‘’}dt</sup>{’} \end{matrix}$$</p>
+<p>对于 $n \ne i$ , 如图所示, 一阶项描述从 $\psi _i$ 到 $\psi _n$ 态的直接跃迁, 二阶项描述通过中间(或 “虚拟” )态 $\psi _m$ 发生跃迁的过程.</p>
+<p><img src="/images/postimage/PerturbationTheory/5.png" alt="多能级系统随时间演化的状态(图来源Introduction to Quantum Mechanics,3rd Edition--Griffiths | Figure 11.3)"></p>
+<center>多能级系统随时间演化的状态(图来源Introduction to Quantum Mechanics,3rd Edition--Griffiths | Figure 11.3)</center>
+<br>
+<h2 id="正弦微扰">正弦微扰</h2>
+<p>[等待更新]</p>
+<br>
+<h2 id="费米黄金规则">费米黄金规则</h2>
+<p>[等待更新]</p>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<p>参考:</p>
+<p>(1)Introduction to Quantum Mechanics,3rd Edition – Griffiths</p>
+<p>(2)<a target="_blank" rel="noopener" href="https://lengxuan.me/qm/">量子力学笔记 – 冷轩</a></p>
+<p>(3)<a target="_blank" rel="noopener" href="https://faculty.pku.edu.cn/_resources/group1/M00/00/0D/cxv0BF5mCiKALw3wAMOSFUeyZKI833.pdf">微扰论</a></p>
+<br>
+<hr>
+<br>
+<p>好无聊…</p>
+<p><img src="/images/postimage/PerturbationTheory/6.jpg" alt=""></p>
+<center>The proof is trivial</center>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="comment">
+        <div id="twikoo-container"></div>
+    </div>
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            1985 - 2025 東雲研究所
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Renko
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+
+<script>
+    twikoo.init({
+        el: "#twikoo-container",
+        envId: "https://twikoo.renko.space/",
+        region: "",
+        path: location.pathname,
+        lang: "",
+    })
+</script>
+
+
+    
+    
+    
+    
+
+</body>
+</html>
+ <canvas
+    id="fireworks"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"
+ ></canvas>
+ <script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+ <script src="/js/fireworks.min.js"></script>
+<html>
+ <canvas
+    id="background"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"
+ ></canvas>
+ <script src="/js/background.min.js"></script>
+ 
+ 
+
+ 
+</html>
