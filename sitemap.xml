@@ -261,6 +261,13 @@
   </url>
   
   <url>
+    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2025-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://demo.renko.space/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/</loc>
     <lastmod>2025-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -276,13 +283,6 @@
   
   <url>
     <loc>https://demo.renko.space/tags/%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/</loc>
-    <lastmod>2025-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.renko.space/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
