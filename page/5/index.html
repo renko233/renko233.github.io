@@ -4,7 +4,7 @@
 <head>
     <meta name="google-site-verification" content="OMIIG4wHoIYN1nS7lhQnxyGEcdztxnyBUlHQRsZHf6g" />
     <meta charset="utf-8" />
-    <title>随笔其五 | 東雲研究所</title>
+    <title>東雲研究所</title>
     <meta name="author" content="Renko" />
     <meta name="description" content="studying..." />
     <meta name="keywords" content="" />
@@ -48,11 +48,7 @@
 
 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
-
-
+<script src="/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -203,65 +199,154 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>随笔其五</h1>
+            <div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/images/1.jpg,/images/2.jpg,/images/3.jpg,/images/4.jpg,/images/5.jpg,/images/6.jpg,/images/7.jpg,/images/8.jpg,/images/9.jpg"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>東雲研究所</h1>
+                <h3>LAB</h3>
+                <h5>studying...</h5>
+            </div>
+        </span>
     </div>
-    <div class="info">
+</div>
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    true
+>
+    <div id="home-posts">
+        
+
+<div class="post">
+    <a href="/1985/10/26/TEST/">
+        <h2 class="post-title">测试一下</h2>
+    </a>
+    <div class="category-and-date">
+        
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/4/11
-        </span>
-        
-        <span class="category">
-            <a href="/categories/%E9%9A%8F%E7%AC%94/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                随笔
-            </a>
+            1985/10/26
         </span>
         
         
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
             
+            <p>##此为测试<br />
+Just a test</p>
+
             
-            <span class="tag">
-                
-                <a href="/tags/%E8%AE%B0%E5%BD%95/" style="color: #ff7d73">
-                    记录
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/1985/10/26/TEST/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
+    
+    <a class="page-num" href="/page/4/">
+        <i class="fa-solid fa-caret-left fa-fw"></i>
+    </a>
+    <a class="page-num" href="/">1</a>
+    <span class="page-omit">...</span>
+    
+    <span class="current">5</span>
+    
+    
+    
+    
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/images/head.jpg" alt="avatar" />
+        </div>
+        <div class="name">Renko</div>
+        <div class="description">
+            <p>或许是在摸鱼中<br />
+。。。</p>
+
+        </div>
+        
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561199324197335/">
+                    <i
+                        class="fa-brands fa-steam fa-fw"
+                    ></i>
                 </a>
             </span>
             
-        </span>
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/55419856">
+                    <i
+                        class="fa-brands fa-bilibili fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://discordapp.com/users/1075960046934032395">
+                    <i
+                        class="fa-brands fa-discord fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1640539862">
+                    <i
+                        class="fa-solid fa-music fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+        </div>
+        
+        
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://z-lib.blog/profile/22533502/bd094f">Z-Library</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://simpletex.cn/ai/latex_ocr">SimpleTex</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://club.nakiya.top/">路边少年聚集地</a>
+            </div>
+            
+        </div>
         
     </div>
-    
-    <div class="content" v-pre>
-        <p> 今日，暴雨。</p>
-<p> 不过说是暴雨其实我并不知道雨到底有多大，今天的课都被调走了，所以没有出门。门窗都紧闭着，连窗帘也拉着，不知道外面是什么情况，只听到了几声雷鸣，倒也是挺响亮的。所以今天就在出租屋待了一天，下午没事干就开始边水博客边听歌。有时敲键盘敲着敲着就不禁愣住了，其缘由是放到了令人怀念的一些歌曲，大多都是曾经在不同时期循环播放过的音乐，这些歌已然成为那些日子的记忆载体了。</p>
-<p> 每当随机到时就会陷入回忆的漩涡，时而愉悦时而感伤，但更多是在感伤。宛如有一股悲伤从我的身体中流过，贯穿了我身上的每一个角落，使我于其中无法自拔。正如常人言：“总在回忆过去的人往往都是现在过的不如意，觉得以往的日子更要好”，我也不知我是否是这样的，但我确实总在怀念过往的日子，不过也不是因为后悔、或是想要再次经历那一段时光，只是单纯在怀念。</p>
-<p> 感觉我总是会在一些小事上产生情绪，除了听歌时的情感波动，也会经常触景生情。不知是否和我以往接触的作品相关，我兴许是日本小说看多了才会变得如此多愁善感，不过我也不是很喜欢将这种自己的情绪赖在自己曾接触过的某方面的内容就是了。但川端康成的小说我一直都挺喜欢的，宛如一场朦胧雨过后的树林中的一座木桥一样令人感到清净。唉文青病又犯了。不过在我还是小学生时，第一次拜读川端康成的作品是《美丽与哀愁》，其中还有不少关于性的描绘，给那时的我看的莫名其妙，这种东西对于小学生来说还是太早了啊（笑）。</p>
-<p> 不过大多时候我还是觉得我的心情是很平静的，如同清澄的湖面一般，而情绪就宛如微风拂过水面时掀起的涟漪，只是浅浅的一层在荡漾，其轻微程度完全不会形成驻波，也不会发生湖震。但是我有点饿了，还是点个外卖吧，我虽然喜欢雨，甚至不撑伞让雨打在我的脸上我也觉得很愉悦，但这种暴雨实在喜欢不起来。不过明天雨停了水散了之后的风景应该会很好，雨后的世界就像是上了一层滤镜，我很喜欢这种滤镜，很清新。</p>
-<hr />
-<p><img src="/images/postimage/2025-4-11-5.jpg" alt="2025-4-11-5" /></p>
-<center>心里有点累累的</center>
+</div>
+
     </div>
-    
-    
-    
-    
-    
-    
-    <div id="comment">
-        <div id="twikoo-container"></div>
-    </div>
-    
     
 </div>
 
@@ -293,22 +378,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-
-<script>
-    twikoo.init({
-        el: "#twikoo-container",
-        envId: "https://twikoo.renko.space/",
-        region: "",
-        path: location.pathname,
-        lang: "",
-    })
-</script>
-
-
     
     
     
